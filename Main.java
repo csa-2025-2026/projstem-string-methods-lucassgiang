@@ -2,7 +2,7 @@ public class Main
 {
   public static void main(String[] args)
   {
-    // write your code here
+    removeStr("badaboom", "ada");
   }
 
   /** Precondition: s1 and s2 are not null
@@ -10,7 +10,7 @@ public class Main
   */
   public static void lastFirstN(String s1, String s2, int n)
   {
-  
+    
   }
 
   /** Precondition: s1 and s2 are not null
@@ -26,6 +26,9 @@ public class Main
   public static String removeStr(String s1, String s2)
   {
     String output = null;
+    int num = s1.indexOf(s2);
+    output = s1.substring(0,num) + s1.substring(num + s2.length());
+    System.out.println(output);
     return output;
   }
 }
